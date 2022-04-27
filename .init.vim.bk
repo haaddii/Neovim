@@ -1,0 +1,83 @@
+"<<<<<<<<<<<<<<<<<<< vim-plug Configs >>>>>>>>>>>>>>>>>>>
+call plug#begin('~/.nvim/plugged')
+    Plug 'cocopon/iceberg.vim'
+    Plug 'cocopon/pgmnt.vim'
+    Plug 'edkolev/tmuxline.vim'
+    Plug 'frazrepo/vim-rainbow'
+    Plug 'itchyny/lightline.vim'
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'junegunn/vim-easy-align'
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'sbdchd/neoformat'
+    Plug 'scrooloose/nerdtree'
+    Plug 'skywind3000/vim-terminal-help'
+    Plug 'overcache/NeoSolarized'
+    Plug 'yuttie/hydrangea-vim'
+call plug#end()
+
+let g:rainbow_active = 1
+colorscheme iceberg
+let g:lightline = {
+            \ 'colorscheme': 'iceberg',
+            \ 'component': {
+            \   'readonly': '%{&readonly?"":""}',
+            \ },
+            \ 'separator':    { 'left': '', 'right': '' },
+            \ 'subseparator': { 'left': '', 'right': '' },
+            \ }
+
+"#H    Hostname of local host
+"#h    Hostname of local host without the domain name
+"#F    Current window flag
+"#I    Current window index
+"#S    Session name
+"#W    Current window name
+"#(shell-command)  First line of the command's output
+let g:tmuxline_preset = {
+      \'a'    : 'SERVER: #S',
+      \'win'  : ['▓▒░', '#W', '░▒▓'],
+      \'cwin' : ['▓▒░', '#W', '#F', '░▒▓'],
+      \'x'    : '#(pwd)',
+      \'y'    : '',
+      \'z'    : '#h'}
+
+let g:tmuxline_separators = {
+    \ 'left' : '',
+    \ 'left_alt': '',
+    \ 'right' : '',
+    \ 'right_alt' : '',
+    \ 'space' : ' '}
+
+" values represent: [ FG, BG, ATTR ]
+"   FG ang BG are color codes
+"   ATTR (optional) is a comma-delimited string of one or more of bold, dim, underscore, etc. For details refer to the STYLE section in the tmux man page
+let g:tmuxline_theme = {
+    \   'a'    : [ 0, 8 ],
+    \   'b'    : [ 8, 0 ],
+    \   'c'    : [ 8, 0 ],
+    \   'x'    : [ 6, 0 ],
+    \   'y'    : [ 8, 0 ],
+    \   'z'    : [ 8, 0 ],
+    \   'win'  : [ 6, 0, 'reverse' ],
+    \   'cwin' : [ 6, 0, 'reverse' ],
+    \   'bg'   : [ 0, 0 ],
+    \ }
+
+"<<<<<<<<<<<<<<<<<<<< neovim Configs >>>>>>>>>>>>>>>>>>>>
+set number
+set nojoinspaces
+set cino=:0,=4
+set laststatus=2
+set mouse=a
+set ts=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+
+"<<<<<<<<<<<<<<<<<< for better lokking >>>>>>>>>>>>>>>>>>
+set background=dark
+set fcs=eob:·
+highlight VertSplit guibg=NONE cterm=NONE
+set termguicolors
