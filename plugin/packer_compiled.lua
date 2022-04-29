@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["fzf.vim"] = {
     loaded = true,
     path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/fzf.vim/~/.fzf/bin/fzf",
@@ -99,6 +104,16 @@ _G.packer_plugins = {
     path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -114,10 +129,10 @@ _G.packer_plugins = {
     path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["vim-devicons"] = {
+  ["vim-bbye"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
+    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/vim-bbye",
+    url = "https://github.com/moll/vim-bbye"
   },
   ["vim-easy-align"] = {
     loaded = true,
