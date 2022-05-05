@@ -23,11 +23,6 @@ packer.startup({
     use 'jiangmiao/auto-pairs'
 
     -- SEARCHING
-    use { 'junegunn/fzf.vim', rtp = '~/.fzf/bin/fzf' }
-    use {
-      "kyazdani42/nvim-tree.lua",
-      requires = "kyazdani42/nvim-web-devicons"
-    }
 
     -- FORMATTING
     use 'junegunn/vim-easy-align'

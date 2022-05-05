@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/hardy/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/hardy/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/hardy/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/hardy/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/hardy/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/huan/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/huan/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/huan/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/huan/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/huan/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,86 +71,72 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   NeoSolarized = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/NeoSolarized",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/NeoSolarized",
     url = "https://github.com/overcache/NeoSolarized"
   },
   ["auto-pairs"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
   ["bufferline.nvim"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
-  },
-  ["fzf.vim"] = {
-    loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/fzf.vim/~/.fzf/bin/fzf",
-    url = "https://github.com/junegunn/fzf.vim"
   },
   ["hydrangea-vim"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/hydrangea-vim",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/hydrangea-vim",
     url = "https://github.com/yuttie/hydrangea-vim"
   },
   ["iceberg.vim"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/iceberg.vim",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/iceberg.vim",
     url = "https://github.com/cocopon/iceberg.vim"
   },
   neoformat = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/neoformat",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["pgmnt.vim"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/pgmnt.vim",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/pgmnt.vim",
     url = "https://github.com/cocopon/pgmnt.vim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-bbye"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/vim-bbye",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
   ["vim-easy-align"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/vim-easy-align",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/vim-easy-align",
     url = "https://github.com/junegunn/vim-easy-align"
   },
   ["vim-rainbow"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/vim-rainbow",
+    path = "/Users/huan/.local/share/nvim/site/pack/packer/start/vim-rainbow",
     url = "https://github.com/frazrepo/vim-rainbow"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Runtimepath customization
-time([[Runtimepath customization]], true)
-vim.o.runtimepath = vim.o.runtimepath .. ",/Users/hardy/.local/share/nvim/site/pack/packer/start/fzf.vim/~/.fzf/bin/fzf"
-time([[Runtimepath customization]], false)
 if should_profile then save_profiles() end
 
 end)
