@@ -42,3 +42,11 @@ map("t", "<M-j>", [[ <C-\><C-N><C-w>h ]], opt)
 map("t", "<M-k>", [[ <C-\><C-N><C-w>j ]], opt)
 map("t", "<M-i>", [[ <C-\><C-N><C-w>k ]], opt)
 map("t", "<M-l>", [[ <C-\><C-N><C-w>l ]], opt)
+
+-- EDITOR BEHAVIORS
+-- ident code with <> in visual mode
+map("v", "<", "<gv", opt)
+map("v", ">", ">gv", opt)
+-- chose more code using i and k
+map("v", "K", ":move '>+1<CR>gv-gv", opt)
+map("v", "I", ":move '<-2<CR>gv-gv", opt)
