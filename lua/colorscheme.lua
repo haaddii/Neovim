@@ -18,14 +18,18 @@ if sysname ~= "Linux\n" then
   if auto_status == "1\n" then
     if dark_status == "Dark\n" then
       vim.o.background = "dark"
+      vim.g.material_style = "darker"
     else
       vim.o.background = "light"
+      vim.g.material_style = "lighter"
     end
   else
     if dark_status == "Dark\n" then
       vim.o.background = "dark"
+      vim.g.material_style = "darker"
     else
       vim.o.background = "light"
+      vim.g.material_style = "lighter"
     end
   end
 else
@@ -34,12 +38,16 @@ else
   local gnome_dark_status = gnome_dark_status_file:read("*all")
   if gnome_dark_status == "'default'\n" then
     vim.o.background = "light"
+    vim.g.material_style = "lighter"
   else
     vim.o.background = "dark"
+    vim.g.material_style = "darker"
   end
 end
 
-local colorscheme = "tokyonight"
+-- local colorscheme = "tokyonight"
+-- local colorscheme = "gruvbox"
+local colorscheme = "material"
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
   vim.notify("colorscheme " .. colorscheme .. " IS NOT INSTALLED")

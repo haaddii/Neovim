@@ -8,10 +8,11 @@ packer.startup({
 
     -- COLORSHEME
     use 'overcache/NeoSolarized'
-    use 'yuttie/hydrangea-vim'
     use 'cocopon/iceberg.vim'
     use 'folke/tokyonight.nvim'
     use 'cocopon/pgmnt.vim'
+    use 'ellisonleao/gruvbox.nvim'
+    use 'marko-cerovac/material.nvim'
 
     -- THEMING
     use 'frazrepo/vim-rainbow'

@@ -84,15 +84,20 @@ _G.packer_plugins = {
     path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  ["hydrangea-vim"] = {
+  ["gruvbox.nvim"] = {
     loaded = true,
-    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/hydrangea-vim",
-    url = "https://github.com/yuttie/hydrangea-vim"
+    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["iceberg.vim"] = {
     loaded = true,
     path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/iceberg.vim",
     url = "https://github.com/cocopon/iceberg.vim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/Users/hardy/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   neoformat = {
     loaded = true,
